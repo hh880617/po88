@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <link rel="stylesheet" href="./js/slick/slick.css">
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#content_header">전체 메뉴 바로가기</a>
+    <a href="#content_main">메인 콘텐츠 영역 바로가기</a>
+    <a href="#content_footer">하단 콘텐츠 영역 바로가기</a>
+  </div>
+  <header id="content_header">
+    <div class="header">
+      <div class="header__logo">
+        <a href="#none">
+          <h1><img src="images/logo.png"></h1>
+        </a>
+      </div>
+      <div class="header__gnb">
+        <div class="header__gnb__menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#Work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="header__trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="content_main">
+    <h2 class="ir_su">메인 콘텐츠영역</h2>
+    <section class="section visible" id="home">
+      <div>
+        <div class="content">
+          <div class="home">
+            <h3 class="home__text1">잠시만 기다려주세요.</h3>
+            <div class="home__image"></div>
+            <div class="home__text2">
+              <span>POTFOLIO</span>
+              <span>HAN HYEON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section" id="about">
+      <div class="content">
+        <div class="about">
+          <div class="about-items">
+            <div class="item">
+              <img src="images/careers-main-01.png">
+              <span>
+                <h3>Together we can make an impact</h3>
+                <p>
+                  Design Works the excitement of an entrepreneurial environment with the stability of an established
+                  practice. Principals and senior leadership work side-by-side with junior designers to create
+                  innovative, workable designs.
+                </p>
+              </span>
+            </div>
+            <div class="item">
+              <img src="images/careers-main-02.png">
+              <span>
+                <h3>We’re always looking for talent</h3>
+                <p>
+                  If you don’t see an open position that fits your talents, send us your resume. We’re always looking
+                  for smart, self-starters and will reach out to you if something becomes available.
+                </p>
+              </span>
+            </div>
+            <div class="item">
+              <img src="images/careers-main-03.png">
+              <span>
+                <h3>Fellowship</h3>
+                <p>
+                  Every summer we offer a Fellowship to a select group of students in architecture, planning and
+                  landscape architecture. Read about our 2019 Fellowship winners and learn more about what the
+                  Fellowship has to offer.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="project">
+      <div class="content">
+        <div class="project-inner">
+          <input type="radio" name="tabmenu" id="tab1" checked>
+          <input type="radio" name="tabmenu" id="tab2">
+          <input type="radio" name="tabmenu" id="tab3">
+          <div class="tabs">
+            <div class="tab">
+              <div class="project-info" data-text="01">
+                <h3>Standard Web</h3>
+                <p>
+                  웹표준을 준수하여 스타벅스 홈페이지를 클론코딩했습니다.<br>
+                  HTML5 시맨틱 마크업, 웹접근성 높이기 위해 GNB는 탭 포커스 이동이 가능 하게 작업했습니다.
+                </p>
+                <ul class="tag">
+                  <li>#웹표준</li>
+                  <li>#웹접근성</li>
+                  <li>#HTML5</li>
+                  <li>#CSS3</li>
+                  <li>#jQuery</li>
+                </ul>
+                <a class="view-project" href="project01/index.html">Project 바로가기 <i class="fa fa-long-arrow-right"></i></a>
+                <a class="view-project" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhh880617.github.io%2Fpot88%2Fproject01%2Findex.html">W3C 검사 <i class="fa fa-long-arrow-right"></i></a>
+                
+              </div>
+              <div class="project-photo">
+                <img src="images/project-main-01-01.png">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="project-info" data-text="02">
+                <h3>Responsive Web</h3>
+                <p>
+                  익산사랑장학재단 사이트를 HTML5 시맨틱과 미디어쿼리를 이용한 반응형웹으로 리뉴얼했습니다.<br>
+                  상단 GNB는 접근성을 높이기 위해 마우스오버와 탭 포커스 이동이 가능하게 작업했습니다.
+                </p>
+                <ul class="tag">
+                  <li>#반응형웹</li>
+                  <li>#웹표준</li>
+                  <li>#웹접근성</li>
+                  <li>#HTML5</li>
+                  <li>#CSS3</li>
+                  <li>#jQuery</li>
+                  <li>#Bootstrap</li>
+                </ul>
+                <a class="view-project" href="project02/index.html">View Project <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+              <div class="project-photo">
+                <img src="images/project-main-02-01.png">
+              </div>
+            </div>
+            <div class="tab">
+              <div class="project-info" data-text="03">
+                <h3>Mobile Web</h3>
+                <p>
+                  mbti 이벤트 모바일 웹입니다.<br>
+                </p>
+                <ul class="tag">
+                  <li>#모바일웹</li>
+                  <li>#HTML5</li>
+                  <li>#CSS3</li>
+                  <li>#jQuery</li>
+                  <li>#웹표준</li>
+                </ul>
+                <a class="view-project" href="project03/index.html">View Project <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+              <div class="project-photo">
+                <img src="images/project-main-03-01.png">
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <label for="tab1"></label>
+            <label for="tab2"></label>
+            <label for="tab3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="content_footer">
+    <h2 class="ir_su">하단 콘텐츠영역 contact</h2>
+    <section class="section" id="contact">    
+      <div class="content">
+        <div class="contact-inner">
+          <div class="contact-info">
+            <h4><b>CONTACT</b></h4>
+            <ul>
+              <li><i class="fa fa-clock-o"></i> 연락가능 시간 : 평일 9시~18시</li>
+              <li><i class="fa fa-clock-o"></i> 이메일 : kkjk1046@naver.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./js/jquery-2.1.4.js"></script>
+  <script src="./js/slick/slick.min.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>
