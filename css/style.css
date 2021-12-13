@@ -140,20 +140,8 @@ header {
   display: none;
 }
 
-/* Hiring Button */
-.btn-hiring {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  color: #fff;
-  background-color: #000;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.38);
-  transition: 0.5s;
-}
 
-/* ################# Section : Home ################ */
+/* home */
 .home {
   background-color: #fff;
   height: 100%;
@@ -228,10 +216,6 @@ header {
   animation-delay: 3.2s;
 }
 
-/* .home__text2 span:nth-child(3) {
-  animation-delay: 3.4s;
-} */
-
 @keyframes slideup {
   0% {
     opacity: 0;
@@ -290,7 +274,9 @@ header {
   }
 }
 
-/* ############## Section : project  ##############*/
+/* about */
+#about h3.title,
+#work h3.title,
 #project h3.title {
   font-size: 50px;
   text-align: left;
@@ -298,7 +284,89 @@ header {
   padding: 50px 20px;
 }
 
-.project-inner {
+
+.about > div {
+  position:relative;
+  float:left;
+  width:50%;
+  padding:20px;
+}
+
+.about__info {
+  line-height:2;
+  word-break:keep-all;
+}
+
+.about__info__title{
+  font-size:24px;
+  margin:0;
+}
+
+.about__info__detail{
+  margin:0 0 10px;
+}
+
+.about__process {
+  background-color:#333;
+  color:#fff;
+  box-sizing:border-box;
+  box-shadow:0 20px 50px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.about__process h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+.item {
+  margin-bottom:10px
+}
+.item p {
+  overflow:hidden;
+}
+.item p span:nth-child(1) {
+  float:left;
+}
+.item p span:nth-child(2) {
+  float:right;
+}
+.progress {
+  border:1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 3px;
+}
+.progress-level {
+  height: 10px;
+  background:linear-gradient(to right, crimson, gold);
+  animation: progress 1s both;
+}
+
+@keyframes progress {
+  0%{
+    opacity:0;
+    width:0%
+  }
+}
+
+.about__process .item:nth-of-type(1) .progress-level {
+  animation-delay: 0s;
+}
+.about__process .item:nth-of-type(2) .progress-level {
+  animation-delay: 0.2s;
+}
+.about__process .item:nth-of-type(3) .progress-level {
+  animation-delay: 0.4s;
+}
+.about__process .item:nth-of-type(4) .progress-level {
+  animation-delay: 0.6s;
+}
+.about__process .item:nth-of-type(5) .progress-level {
+  animation-delay: 0.8s;
+}
+
+/* project*/
+.project {
   overflow: hidden;
   position:relative;
   height: 100%;
@@ -320,7 +388,7 @@ header {
   background: #fafafa;
 }
 
-.project-info {
+.tab__info {
   float: left;
   width: 25%;
   height: 100%;
@@ -328,26 +396,26 @@ header {
   position: relative;
 }
 
-.project-info h3 {
+.tab__info h3 {
   font-size: 20px;
   position: relative;
 }
 
-.project-info p {
+.tab__info p {
   font-size: 13px;
   line-height: 1.5em;
 }
 
-.project-info ul {
+.tab__info ul {
   line-height: 2em;
   margin: 30px 0;
 }
 
-.project-info .tag {
+.tab__info .tag {
   margin-top: 15px;
 }
 
-.project-info .tag li {
+.tab__info .tag li {
   display: inline-block;
   padding: 5px 10px;
   margin: 0 5px 5px 0;
@@ -357,13 +425,13 @@ header {
   cursor: default;
 }
 
-.project-photo {
+.tab__photo {
   width: 75%;
   overflow: hidden;
   margin-bottom: 0 !important;
 }
 
-.project-info:before {
+.tab__info:before {
   content: attr(data-text);
   font-size: 130px;
   color: #eee;
@@ -376,7 +444,7 @@ input[name=tabmenu] {
   display: none;
 }
 
-.btn {
+.project__btn {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -384,7 +452,7 @@ input[name=tabmenu] {
   transform: translateX(-50%);
 }
 
-.btn label {
+.project__btn label {
   cursor: pointer;
   width: 5px;
   height: 5px;
@@ -395,7 +463,7 @@ input[name=tabmenu] {
   position: relative;
 }
 
-.btn label:before {
+.project__btn label:before {
   content: '';
   display: inline-block;
   border: 1px solid transparent;
@@ -408,13 +476,13 @@ input[name=tabmenu] {
   transition: 0.3s;
 }
 
-.btn label:hover:before {
+.project__btn label:hover:before {
   border: 1px solid #aaa;
 }
 
-input[id=tab1]:checked~.btn label[for=tab1]:before,
-input[id=tab2]:checked~.btn label[for=tab2]:before,
-input[id=tab3]:checked~.btn label[for=tab3]:before {
+input[id=tab1]:checked~.project__btn label[for=tab1]:before,
+input[id=tab2]:checked~.project__btn label[for=tab2]:before,
+input[id=tab3]:checked~.project__btn label[for=tab3]:before {
   border: 1px solid #aaa;
 }
 
@@ -467,31 +535,31 @@ input[id=tab3]:checked~.tabs {
   padding: 50px 20px;
 }
 
-.list-item {
+.list__item {
   float: left;
   display: block;
-  width: 33.333333%;
+  width: 25%;
   padding: 20px;
 }
 
-.list-item .list-img {
+.list__item .list__item__img {
   position: relative;
   overflow: hidden;
   transition:all 0.3s;
 }
 
-.list-item .list-img:hover {
+.list__item .list__item__img:hover {
   box-shadow:0 5px 20px rgba(0,0,0,0.5);
   background:royalblue;
 }
 
-.list-item .list-img img {
+.list__item .list__item__img img {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-.list-item .list-hidden {
+.list__item .list-hidden {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -500,7 +568,7 @@ input[id=tab3]:checked~.tabs {
   transition: all 0.5s;
 }
 
-.list-item:nth-child(even) .list-hidden {
+.list__item:nth-child(even) .list-hidden {
   top: -100%;
   left: 0;
   margin: 0;
@@ -509,7 +577,7 @@ input[id=tab3]:checked~.tabs {
   transition: all 0.3s;
 }
 
-.list-item:nth-child(odd) .list-hidden {
+.list__item:nth-child(odd) .list-hidden {
   top: 0;
   right: 100%;
   margin: 0;
@@ -518,17 +586,17 @@ input[id=tab3]:checked~.tabs {
   transition: all 0.3s;
 }
 
-.list-item:nth-child(even) .list-img:hover .list-hidden {
+.list__item:nth-child(even) .list__item__img:hover .list-hidden {
   top: 0;
   opacity: 1;
 }
 
-.list-item:nth-child(odd) .list-img:hover .list-hidden {
+.list__item:nth-child(odd) .list__item__img:hover .list-hidden {
   right: 0;
   opacity: 1;
 }
 
-.list-item .list-hidden a {
+.list__item .list-hidden a {
   position: absolute;
   width: 100px;
   height: 30px;
@@ -542,7 +610,7 @@ input[id=tab3]:checked~.tabs {
   border: 1px solid #fff;
 }
 
-.list-title {
+.list__item__title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -568,4 +636,198 @@ input[id=tab3]:checked~.tabs {
 
 #contact .contact-info ul li {
   line-height: 2em;
+}
+
+@media all and (max-width: 992px){
+  .list__item {
+    width: 33.333333%;
+  }
+}
+@media all and (max-width: 768px) {  
+  /* Header */
+  header {
+    transition: 0.5s;
+    z-index: 100;
+    background:#fff;
+    position:fixed;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .header__gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .header__gnb.active {
+    right: 0;
+  }
+  .header__gnb__menu {
+    display: block;
+  }
+  .header__gnb__menu {
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  .header__gnb__menu a {
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  /* Trigger */
+  .header__trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .header__trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .header__trigger span:nth-child(1) {
+    top: 0;
+  }
+  .header__trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .header__trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .header__trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg)
+  }
+  .header__trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .header__trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg)
+  }
+  
+
+  
+  #home,
+  #about,
+  #project,
+  #work,
+  #contact {
+    display: block;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  /* Home */
+  #home {
+    height:40vh;
+  }
+  .home__text1 {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+  }
+  .home__text2  {
+    left: 20px;
+  }
+  .home__text2 span {
+    font-size: 50px;
+  }
+
+  /* about project work title */ 
+  #about h3.title,
+  #project h3.title,
+  #work h3.title {
+    font-size: 40px;
+    padding:30px 20px;
+    text-align:center;
+  }
+
+  /* about */  
+  .about > div {
+    float:none;
+    width:100%;
+  }
+
+  /* project */
+  .project {
+    height: auto;
+    border: none;
+  }
+  .tab {
+    background:none;
+  }  
+  .tab__info {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .tab__info:before {
+    top:-30px;
+    right:10px;
+    left:auto;
+    font-size:100px;
+  }
+  .view-project {
+    width: 100%;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+  .btn {    
+    bottom: 10px;
+  }
+  .tab__photo {
+    float: none;
+    width: 100%;
+  }
+  .tab__photo img{
+    width: 100%;
+  }
+
+  /* work */    
+  #work h3.title {
+    font-size: 40px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .list__item {
+    width:50%
+  }
+
+  /* contact */
+  #contact h3.title {
+    font-size: 40px;
+    padding:30px 20px 0;
+  }
+  .contact-inner {
+    height: auto;
+  }
+}
+
+@media all and(max-width: 480px) {  
+    /* work */  
+    .list__item {
+      float:none;
+      width:100%
+    }
 }

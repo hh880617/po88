@@ -9,8 +9,15 @@ $(function(){
     $('.header__trigger').removeClass('active')
   })
   
+  $(window).resize(function(){
+    if($(window).width() > 768) {    
+      $('.header__gnb').removeClass('active')
+      $('.header__trigger').removeClass('active')
+    }
+  })
+
   //project slick slide
-  $('.project-photo').slick({
+  $('.project__photo').slick({
     dots: true,
     infinite: true,
     speed: 500,

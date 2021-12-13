@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>포트폴리오</title>
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -15,6 +15,7 @@
 
 <body>
   <div id="skip">
+    <h2 class="ir_su">스킵네비게이션 메뉴</h2>
     <a href="#content_header">전체 메뉴 바로가기</a>
     <a href="#content_main">메인 콘텐츠 영역 바로가기</a>
     <a href="#content_footer">하단 콘텐츠 영역 바로가기</a>
@@ -56,15 +57,75 @@
       </div>      
     </section>
 
+    <section class="section" id="about">
+      <h3 class="title">About</h3>
+      <div class="about">
+        <div class="about__info">
+          <h4 class="about__info__title">About me</h4>
+          <p class="about__info__detail">
+            실용예제로 배우는 웹표준 책과 웹접근성교육을 통하여, 웹 구축시 화려하진 않아도 기본을 잘 지킬려고 노력하고 있습니다.<br>
+            불필요한 코드를 지양하고, 유지보수 편한 최적화된 마크업을 지향합니다. 부족한 점을 계속 공부하며 채워나가고 있습니다.<br>            
+          </p>
+          <h4 class="about__info__title">Career</h4>
+          <p class="about__info__detail">
+            2021.05~2013.07 좋은정보기술(주)<br>
+            2014.02~2015.03 (주)웹프라이스<br>
+            2016.03~2021.03 클컴미디어<br>
+            2021.05~2021.09 클컴미디어
+          </p>
+        </div>
+        <div class="about__process">
+          <h4>Skills process</h1>
+          <div class="item">
+            <p>
+              <span>HTML</span>
+              <span>90%</span>
+            </p>
+            <div class="progress">
+              <div class="progress-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="item">
+            <p>
+              <span>CSS</span>
+              <span>85%</span>
+            </p>
+            <div class="progress">
+              <div class="progress-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="item">
+            <p>
+              <span>jQuery</span>
+              <span>60%</span>
+            </p>
+            <div class="progress">
+              <div class="progress-level" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="item">
+            <p>
+              <span>Photoshop</span>
+              <span>80%</span>
+            </p>
+            <div class="progress">
+              <div class="progress-level" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <section class="section" id="project">
-      <h3 class="title">Web Project</h3>
-      <div class="project-inner">
+      <h3 class="title">Project</h3>
+      <div class="project">
         <input type="radio" name="tabmenu" id="tab1" checked>
         <input type="radio" name="tabmenu" id="tab2">
         <input type="radio" name="tabmenu" id="tab3">
         <div class="tabs">
           <div class="tab">
-            <div class="project-info" data-text="01">
+            <div class="tab__info" data-text="01">
               <h3>Standard Web</h3>
               <p>
                 웹표준을 준수하여 스타벅스 홈페이지를 클론코딩했습니다.<br>
@@ -81,12 +142,12 @@
               <a class="view-project" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhh880617.github.io%2Fproject01%2Findex.html">W3C 검사 <i class="fa fa-long-arrow-right"></i></a>
               
             </div>
-            <div class="project-photo">
+            <div class="tab__photo">
               <img src="images/project-main-01-01.png">
             </div>
           </div>
           <div class="tab">
-            <div class="project-info" data-text="02">
+            <div class="tab__info" data-text="02">
               <h3>Responsive Web</h3>
               <p>
                 익산사랑장학재단 사이트를 HTML5 시맨틱과 미디어쿼리를 이용한 반응형웹으로 리뉴얼했습니다.<br>
@@ -105,12 +166,12 @@
               <a class="view-project" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhh880617.github.io%2Fproject02%2Findex.html">W3C 검사 <i class="fa fa-long-arrow-right"></i></a>
               
             </div>
-            <div class="project-photo">
+            <div class="tab__photo">
               <img src="images/project-main-02-01.png">
             </div>
           </div>
           <div class="tab">
-            <div class="project-info" data-text="03">
+            <div class="tab__info" data-text="03">
               <h3>Mobile Web</h3>
               <p>
                 mbti 이벤트 모바일 웹입니다.<br>
@@ -125,12 +186,12 @@
               <a class="view-project" href="/project03/index.html">View Project <i class="fa fa-long-arrow-right"></i></a>
               <a class="view-project" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhh880617.github.io%2Fproject03%2Findex.html">W3C 검사 <i class="fa fa-long-arrow-right"></i></a>
             </div>
-            <div class="project-photo">
+            <div class="tab__photo">
               <img src="images/project-main-03-01.png">
             </div>
           </div>
         </div>
-        <div class="btn">
+        <div class="project__btn">
           <label for="tab1"></label>
           <label for="tab2"></label>
           <label for="tab3"></label>
@@ -140,329 +201,327 @@
 
     <section class="section" id="work">  
       <h3 class="title">Work</h3>   
-      <div class="work-info">
-        <ul>
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_32.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 mbti 모바일</p>
-          </li> 
+      <ul>
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_32.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 mbti 모바일</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_31.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 글로벌연구센터 하브리드앱</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_31.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 글로벌연구센터 하브리드앱</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_30.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 이르케 하이브리드앱</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_30.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 이르케 하이브리드앱</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_29.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 역대급이벤트 모바일</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_29.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 역대급이벤트 모바일</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_28.png" alt="">
-              <p class="list-hidden">
-                <a href="https://wu.ac.kr/ontact/index.do" target="_blank">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 WU 온택트 공유</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_28.png" alt="">
+            <p class="list-hidden">
+              <a href="https://wu.ac.kr/ontact/index.do" target="_blank">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 WU 온택트 공유</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_27.png" alt="">
-              <p class="list-hidden">
-                <a href="https://wge.wu.ac.kr" target="_blank">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 화상영어</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_27.png" alt="">
+            <p class="list-hidden">
+              <a href="https://wge.wu.ac.kr" target="_blank">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 화상영어</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_26.png" alt="">
-              <p class="list-hidden">
-                <a href="http://www.kulcom.co.kr" target="_blank">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 클컴미디어</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_26.png" alt="">
+            <p class="list-hidden">
+              <a href="http://www.kulcom.co.kr" target="_blank">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 클컴미디어</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_25.png" alt="">
-              <p class="list-hidden">
-                <a href="https://www.wu.ac.kr/sites/uri/index.do" target="_blank" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 기업신속대응센터</p>
-          </li>
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_25.png" alt="">
+            <p class="list-hidden">
+              <a href="https://www.wu.ac.kr/sites/uri/index.do" target="_blank" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 기업신속대응센터</p>
+        </li>
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_24.png" alt="">
-              <p class="list-hidden">
-                <a href="https://nursing.wu.ac.kr" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 학과</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_24.png" alt="">
+            <p class="list-hidden">
+              <a href="https://nursing.wu.ac.kr" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 학과</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_23.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 펀톡 전화영어</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_23.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 펀톡 전화영어</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_22.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 에듀와이드 레벨테스트</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_22.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 에듀와이드 레벨테스트</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_21.png" alt="">
-              <p class="list-hidden">
-                <a href="https://iksanwge.wu.ac.kr">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> WGE 화상영어교육센터</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_21.png" alt="">
+            <p class="list-hidden">
+              <a href="https://iksanwge.wu.ac.kr">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> WGE 화상영어교육센터</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_20.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 수시랜딩</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_20.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 수시랜딩</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_19.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 썬웨이테크놀로지</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_19.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 썬웨이테크놀로지</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_18.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 원광보건대학교 중국어</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_18.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 원광보건대학교 중국어</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_17.png" alt="">
-              <p class="list-hidden">
-                <a href="http://www.boeunhome.or.kr">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 보은의집</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_17.png" alt="">
+            <p class="list-hidden">
+              <a href="http://www.boeunhome.or.kr">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 보은의집</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_16.png" alt="">
-              <p class="list-hidden">
-                <a href="http://senior.ydp.or.kr">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 어르신복지관</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_16.png" alt="">
+            <p class="list-hidden">
+              <a href="http://senior.ydp.or.kr">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 어르신복지관</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_15.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 영등포50플러스</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_15.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 영등포50플러스</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_14.png" alt="">
-              <p class="list-hidden">
-                <a href="https://www.ydp.or.kr">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 여의도복지관</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_14.png" alt="">
+            <p class="list-hidden">
+              <a href="https://www.ydp.or.kr">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 여의도복지관</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_13.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 현대종합주방 쇼핑몰</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_13.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 현대종합주방 쇼핑몰</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_12.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 조달청 다수공급계약관리</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_12.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 조달청 다수공급계약관리</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_11.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 방과후학습 ERP 관리자</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_11.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 방과후학습 ERP 관리자</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_10.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 스마트프라이스 쇼핑몰</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_10.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 스마트프라이스 쇼핑몰</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_09.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 에너지농장</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_09.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 에너지농장</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_08.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 방문판매 관리자</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_08.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 방문판매 관리자</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_07.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 한국전통문화고등학교 ERP</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_07.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 한국전통문화고등학교 ERP</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_06.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 매니아클럽 쇼핑몰</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_06.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 매니아클럽 쇼핑몰</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_05.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 해일정보 반응형</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_05.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 해일정보 반응형</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_04.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 남원시 일본어</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_04.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 남원시 일본어</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_03.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 남원시 문화관광</p>
-          </li> 
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_03.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 남원시 문화관광</p>
+        </li> 
 
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_02.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 군산대학교 학부</p>
-          </li> 
-          
-          <li class="list-item">
-            <div class="list-img">
-              <img src="./images/work_01.png" alt="">
-              <p class="list-hidden">
-                <a href="javascript:void(0)" title="">바로가기</a>
-              </p>
-            </div>
-            <p class="list-title"><i class="fa fa-clock-o"></i> 영산선학대학교</p>
-          </li> 
-        </ul>
-      </div>    
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_02.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 군산대학교 학부</p>
+        </li> 
+        
+        <li class="list__item">
+          <div class="list__item__img">
+            <img src="./images/work_01.png" alt="">
+            <p class="list-hidden">
+              <a href="javascript:void(0)" title="">바로가기</a>
+            </p>
+          </div>
+          <p class="list__item__title"><i class="fa fa-clock-o"></i> 영산선학대학교</p>
+        </li> 
+      </ul>
     </section>
   </main>
 
