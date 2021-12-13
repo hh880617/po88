@@ -17,6 +17,7 @@ $(function(){
     fade: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    dot:false
   })
 });
