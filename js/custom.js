@@ -14,7 +14,19 @@ $(function(){
       $('.header__gnb').removeClass('active')
       $('.header__trigger').removeClass('active')
     }
-  })
+  });
+
+  
+  $(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+
+    $(".section").each(function(index){
+      if(scrollTop >= $(".section").eq(index).offset().top - 500){
+        $(".section").eq(index).addClass("active");
+      }
+    });    
+
+  });
 
   //project slick slide
   $('.project__photo').slick({

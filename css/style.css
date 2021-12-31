@@ -85,6 +85,17 @@ body {
   top: 0
 }
 
+.section {
+  opacity:0;
+  margin-top:200px;
+  transition:all 1s;
+}
+
+.section.active {
+  margin-top:0;
+  opacity:1;
+}
+
 .section::after {
   content: '';
   display: block;
