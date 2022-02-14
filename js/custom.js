@@ -21,7 +21,7 @@ $(function(){
     let scrollTop = $(window).scrollTop();
 
     $(".section").each(function(index){
-      if(scrollTop >= $(".section").eq(index).offset().top - 500){
+      if(scrollTop >= $(".section").eq(index).offset().top - ($(window).height()-100)){
         $(".section").eq(index).addClass("active");
       }
     });    

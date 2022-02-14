@@ -87,7 +87,7 @@ body {
 
 .section {
   opacity:0;
-  margin-top:200px;
+  margin-top:50px;
   transition:all 1s;
 }
 
@@ -196,16 +196,18 @@ header {
 .home__image {
   background: url(../images/section-bg-01.jpg) no-repeat center center;
   background-size: cover;
+  width: 100%;
   height: 100%;
   opacity: 0;
   animation: opacity-image 1s 2.5s ease-in both;
+  position:absolute;
 }
 
 .home__text2 {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 200px;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   transition: left 0.3s;
 }
 
@@ -658,7 +660,7 @@ input[id=tab3]:checked~.tabs {
   /* Header */
   header {
     transition: 0.5s;
-    z-index: 100;
+    z-index: 1000;
     background:#fff;
     position:fixed;
     box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
@@ -736,22 +738,30 @@ input[id=tab3]:checked~.tabs {
   }
   
 
-  
-  #home,
+  #home{
+    display: block;
+  }
   #about,
   #project,
   #work,
   #contact {
     display: block;
+    z-index:100;
+    position:relative;
+    background:#fff;
   }
 
   main {
-    padding-top: 60px;
+    padding-top: 100vh;
   }
 
   /* Home */
   #home {
-    height:40vh;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
   }
   .home__text1 {
     transform: translate(-50%, -50%) scale(0.7);
