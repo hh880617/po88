@@ -219,6 +219,7 @@ header {
   width: 0;
   overflow: hidden;
   animation: reveal 1s 3s ease-in-out both;
+  white-space:nowrap;
 }
 
 .home__text2 span:nth-child(1) {
