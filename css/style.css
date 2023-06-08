@@ -846,7 +846,7 @@ input[id=tab3]:checked~.tabs {
   }
 }
 
-@media all and(max-width: 480px) {  
+@media all and (max-width: 480px) {  
     /* work */  
     .list__item {
       float:none;
