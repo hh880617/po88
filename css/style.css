@@ -485,8 +485,8 @@ input[name=tabmenu] {
   height: 17px;
   border-radius: 50%;
   position: absolute;
-  left: -6px;
-  top: -6px;
+  left: -7px;
+  top: -7px;
   transition: 0.3s;
 }
 
